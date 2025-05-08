@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo info        
-        run: echo "Workflow triggat av ${GITHUB_EVENT_NAME}" # TODO: uppdatera texten
+        run: echo "Workflow triggat av ${GITHUB_EVENT_NAME}"
 
   if_merged:
     if: github.event.pull_request.merged == true
